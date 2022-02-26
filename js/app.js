@@ -1,13 +1,14 @@
 //Responsive Nav Bar
 
 let hb = document.getElementById("hamburger");
-let navlinks = document.getElementById("nav-ul");
+let navlink = document.getElementById("nav-ul");
+
 
 function navmenu() {
-  if (navlinks.style.display == "none") {
-    navlinks.style.display = "block";
+  if (navlink.style.display == "none") {
+    navlink.style.display = "block";
   } else {
-    navlinks.style.display = "none";
+    navlink.style.display = "none";
   }
 }
 
@@ -15,13 +16,21 @@ hb.addEventListener("click", navmenu);
 
 function resetmenu() {
   if (window.innerWidth > 768) {
-    navlinks.style.display = "flex";
+    navlink.style.display = "flex";
   } else if (window.innerWidth <= 768) {
-    navlinks.style.display = "none";
+    navlink.style.display = "none";
   }
 }
 
+
+
+
 window.addEventListener("resize", resetmenu);
+
+function navlinks(){
+  navlink.style.display = "none";
+
+}
 
 // Counter
 
@@ -37,7 +46,7 @@ counters.forEach((counter) => {
 
     if (c < target) {
       counter.innerText = `${Math.ceil(c + inc)}`;
-      setTimeout(updatecounter, 135);
+      setTimeout(updatecounter, 125);
     }
   };
 
