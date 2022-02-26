@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ca50a43f87.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css " />
+    <title>Commune</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-menu">
+          <div class="logo flex-start">COMMUNE</div>
+          <div class="ham-container" onclick="ham(),ham2()">
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <ul id="nav-ul">
+          <li><a href="#home" onclick="navlinks()">Home</a></li>
+          <li><a href="#about" onclick="navlinks()">About</a></li>
+          <li><a href="#joinus" onclick="navlinks()">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="logo home-head">COMMUNE</div>
+        <img src="img/main.png" alt="" id="mainimg" class="m-auto" />
+
+        <div class="numberdata">
+          <div id="counter">
+            <div class="number" data-target="300"></div>
+            <div>Friends</div>
+          </div>
+          <div>
+            <div class="number" data-target="25"></div>
+            <div>Meetups</div>
+          </div>
+          <div>
+            <div class="number" data-target="5"></div>
+            <div>Cities</div>
+          </div>
+          <div>
+            <div class="number" data-target="10"></div>
+            <div>Groups</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="logo about-head">About</div>
+        <div class="sub-about">
+          <div class="text-container">
+            <div class="text-container-sub">Who We Are</div>
+            <div class="text-container-text">
+              We are a community. That helps you to get friends near you with
+              different interests. Our aim is to spread friendship everywhere.
+              We keep care of each other. We conduct multiple meetups on
+              multiple interests. Currently, We are in 5 cities, and our plan is
+              to cover the whole country slowly but steadily. If you wanna join
+              us too you can just fill out the form and then our support will
+              help you to join in. Feel free to ask any questions to our
+              support.
+            </div>
+          </div>
+          <div class="about-main-img-container">
+            <img
+              src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZnJpZW5kc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="about-main-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="joinus">
+        <div class="logo text-primary about-head">Join Us</div>
+        <div class="joinform">
+          <form action="" class="form">
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="Enter Your Name here"
+            />
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter Your E-mail here"
+            />
+            <input
+              type="number"
+              name=""
+              id="dob"
+              placeholder="Enter your Age"
+            />
+            <div class="btn">
+              <input type="reset" class="reset" value="Reset " />
+              <input type="submit" class="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-sub">
+          <div class="logo text-secondary">COMMUNE</div>
+          <div class="footer-text">
+            We are a community. That helps you to get friends near you with
+            different interests. Our aim is to spread friendship everywhere. We
+            keep care of each other.
+          </div>
+        </div>
+        <div class="quicklinks">
+          <div>Quick Links</div>
+          <ul>
+            <li class=""><a href="#home"> Home</a></li>
+            <li class=""><a href="#about"> About</a></li>
+            <li class=""><a href="#joinus">Join us</a></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <div>Social</div>
+          <div class="social-btn">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-down">
+        <div class="">Copyright &#169; 2022 COMMUNE</div>
+        <div class="">Designed and Developed By krishna Aggarwal</div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="js/app.js"></script>
+</html>
