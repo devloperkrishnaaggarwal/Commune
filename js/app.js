@@ -37,7 +37,7 @@ counters.forEach((counter) => {
 
     if (c < target) {
       counter.innerText = `${Math.ceil(c + inc)}`;
-      setTimeout(updatecounter, 75);
+      setTimeout(updatecounter, 135);
     }
   };
 
