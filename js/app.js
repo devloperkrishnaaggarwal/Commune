@@ -3,7 +3,6 @@
 let hb = document.getElementById("hamburger");
 let navlink = document.getElementById("nav-ul");
 
-
 function navmenu() {
   if (navlink.style.display == "none") {
     navlink.style.display = "block";
@@ -22,15 +21,7 @@ function resetmenu() {
   }
 }
 
-
-
-
 window.addEventListener("resize", resetmenu);
-
-function navlinks(){
-  navlink.style.display = "none";
-
-}
 
 // Counter
 
