@@ -23,6 +23,9 @@ function resetmenu() {
 
 window.addEventListener("resize", resetmenu);
 
+function navlinks(){
+  navlink.style.display="none"
+}
 // Counter
 
 const counters = document.querySelectorAll(".number");
