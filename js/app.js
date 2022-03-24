@@ -2,7 +2,8 @@
 
 let hb = document.getElementById("hamburger");
 let navlink = document.getElementById("nav-ul");
-
+let navuls = document.querySelectorAll(".nav-ul-li");
+console.log(navuls);
 function navmenu() {
   if (navlink.style.display == "none") {
     navlink.style.display = "block";
@@ -21,11 +22,22 @@ function resetmenu() {
   }
 }
 
+navuls.forEach((navul) => {
+  navul.addEventListener("click", () => {
+    if (window.innerWidth < 768) {
+      navlink.style.display = "none";
+    }
+  });
+});
+
 window.addEventListener("resize", resetmenu);
 
-function navlinks(){
-  navlink.style.display="none"
+function navlinks() {
+  if (window.innerWidth > 768) {
+    navlink.style.display = "none";
+  }
 }
+
 // Counter
 
 const counters = document.querySelectorAll(".number");
