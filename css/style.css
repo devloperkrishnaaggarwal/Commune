@@ -659,7 +659,7 @@ body {
     color: var(--primary-color);
     font-size: 1.2rem;
   }
-
+  .navbar>ul:hover  
   .navbar > ul > li:hover,
   .navbar > ul > li > a:hover {
     background-color: var(--primary-color);
@@ -947,7 +947,7 @@ body {
     color: var(--primary-color);
     font-size: 1.2rem;
   }
-
+.navbar>ul:hover
   .navbar > ul > li:hover,
   .navbar > ul > li > a:hover {
     background-color: var(--primary-color);
